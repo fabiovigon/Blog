@@ -14,7 +14,7 @@ namespace Blog.Configuration
             servicesCollection.AddDbContext<ApplicationDbContext>(options =>
               options.UseSqlServer(
                   configuration.GetConnectionString("DefaultConnection")));
-            servicesCollection.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            servicesCollection.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             servicesCollection.AddControllersWithViews().AddRazorRuntimeCompilation();
             servicesCollection.AddRazorPages();

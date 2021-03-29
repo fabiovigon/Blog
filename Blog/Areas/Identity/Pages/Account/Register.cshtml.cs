@@ -60,12 +60,10 @@ namespace Blog.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required]
-            [EmailAddress]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
             [Required]
-            [EmailAddress]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
         }
