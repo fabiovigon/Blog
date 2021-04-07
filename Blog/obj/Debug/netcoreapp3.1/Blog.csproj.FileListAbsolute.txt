@@ -1,3 +1,11 @@
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csprojAssemblyReference.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.AssemblyInfoInputs.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.AssemblyInfo.cs
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.RazorAssemblyInfo.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.RazorAssemblyInfo.cs
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\Blog.StaticWebAssets.xml
@@ -400,14 +408,6 @@ C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\runtimes\win\lib\n
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\Blog.Data.dll
 C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\Blog.Data.pdb
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csprojAssemblyReference.cache
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.AssemblyInfoInputs.cache
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.AssemblyInfo.cs
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csproj.CoreCompileInputs.cache
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.RazorAssemblyInfo.cache
-C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.RazorAssemblyInfo.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\staticwebassets\Blog.StaticWebAssets.Manifest.cache
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\staticwebassets\Blog.StaticWebAssets.xml
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\scopedcss\bundle\Blog.styles.css
@@ -422,6 +422,9 @@ C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Identi
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Admin\_Layout.cshtml.g.cs
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Create.cshtml.g.cs
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Blog\_Layout.cshtml.g.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Layout.cshtml.g.cs
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AdminFooter\Default.cshtml.g.cs
@@ -443,3 +446,5 @@ C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csproj.CopyCo
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.dll
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.pdb
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.genruntimeconfig.cache
+C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\Blog.Service.dll
+C:\Users\Fabio\source\repos\Blog\Blog\bin\Debug\netcoreapp3.1\Blog.Service.pdb

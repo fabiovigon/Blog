@@ -1,5 +1,9 @@
-﻿using Blog.Data;
+﻿using Blog.BusinessManager;
+using Blog.BusinessManager.interfaces;
+using Blog.Data;
 using Blog.Data.Models;
+using Blog.Service;
+using Blog.Service.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -18,6 +22,12 @@ namespace Blog.Configuration
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             servicesCollection.AddControllersWithViews().AddRazorRuntimeCompilation();
             servicesCollection.AddRazorPages();
+        }
+
+        public static void AddCustomServices(this IServiceCollection serviceCollection)
+        {
+            serviceCollection.AddScoped<IBlogBusinessManager, BlogBusinessManager>();
+            serviceCollection.AddScoped<IBlogService, BlogService>();
         }
     }
 }

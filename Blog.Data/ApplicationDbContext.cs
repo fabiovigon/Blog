@@ -10,5 +10,8 @@ namespace Blog.Data
             : base(options)
         {
         }
+
+        public DbSet<Blogger> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }

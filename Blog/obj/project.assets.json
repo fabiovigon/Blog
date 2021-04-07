@@ -2781,6 +2781,19 @@
         "runtime": {
           "bin/placeholder/Blog.Data.dll": {}
         }
+      },
+      "Blog.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Blog.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Service.dll": {}
+        }
       }
     }
   },
@@ -8980,11 +8993,17 @@
       "type": "project",
       "path": "../Blog.Data/Blog.Data.csproj",
       "msbuildProject": "../Blog.Data/Blog.Data.csproj"
+    },
+    "Blog.Service/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Service/Blog.Service.csproj",
+      "msbuildProject": "../Blog.Service/Blog.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Blog.Data >= 1.0.0",
+      "Blog.Service >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.10",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.13",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.13",
@@ -9023,6 +9042,9 @@
           "projectReferences": {
             "C:\\Users\\Fabio\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj": {
               "projectPath": "C:\\Users\\Fabio\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj"
+            },
+            "C:\\Users\\Fabio\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj": {
+              "projectPath": "C:\\Users\\Fabio\\source\\repos\\Blog\\Blog.Service\\Blog.Service.csproj"
             }
           }
         }

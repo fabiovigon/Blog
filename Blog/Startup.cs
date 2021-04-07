@@ -18,6 +18,7 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDefaultServices(Configuration);
+            services.AddCustomServices();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

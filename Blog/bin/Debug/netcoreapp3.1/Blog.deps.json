@@ -32,6 +32,7 @@
       "Blog/1.0.0": {
         "dependencies": {
           "Blog.Data": "1.0.0",
+          "Blog.Service": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.13",
           "Microsoft.AspNetCore.Identity.UI": "3.1.13",
@@ -2412,6 +2413,17 @@
         },
         "compile": {
           "Blog.Data.dll": {}
+        }
+      },
+      "Blog.Service/1.0.0": {
+        "dependencies": {
+          "Blog.Data": "1.0.0"
+        },
+        "runtime": {
+          "Blog.Service.dll": {}
+        },
+        "compile": {
+          "Blog.Service.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5199,6 +5211,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Blog.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
