@@ -6,3 +6,4 @@ C:\Users\Fabio\source\repos\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.Ass
 C:\Users\Fabio\source\repos\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.csproj.CoreCompileInputs.cache
 C:\Users\Fabio\source\repos\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.dll
 C:\Users\Fabio\source\repos\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.pdb
+C:\Users\Fabio\source\repos\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.csprojAssemblyReference.cache

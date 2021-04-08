@@ -1,12 +1,12 @@
 C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Service.deps.json
 C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Service.dll
 C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Service.pdb
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Data.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Data.pdb
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.csprojAssemblyReference.cache
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.AssemblyInfoInputs.cache
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.AssemblyInfo.cs
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.csproj.CopyComplete
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.dll
 C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.pdb
-C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Data.dll
-C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\netcoreapp3.1\Blog.Data.pdb
-C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\netcoreapp3.1\Blog.Service.csproj.CopyComplete

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blog.Models.BlogViewModels
+namespace Blog.Models.AdminViewModels
 {
-    public class CreateBlogViewModel
+    public class IndexViewModel
     {
-        public Blogger Blog { get; set; }
+        public IEnumerable<Blogger> Blogs { get; set; }
     }
 }
