@@ -6,12 +6,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blog.Models.BlogViewModels
+namespace Blog.Models.PostViewModels
 {
     public class CreateViewModel
     {
         [Required, Display(Name = "Header Image")]
-        public IFormFile BlogHeaderImage { get; set; }
-        public Blogger Blog { get; set; }
+        public IFormFile HeaderImage { get; set; }
+        public Post Post { get; set; }
     }
 }

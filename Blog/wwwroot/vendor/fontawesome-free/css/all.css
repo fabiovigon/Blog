@@ -567,10 +567,10 @@ readers do not read off random characters that represent icons */
 .fa-blog:before {
   content: "\f781"; }
 
-.fa-blogger:before {
+.fa-Post:before {
   content: "\f37c"; }
 
-.fa-blogger-b:before {
+.fa-Post-b:before {
   content: "\f37d"; }
 
 .fa-bluetooth:before {

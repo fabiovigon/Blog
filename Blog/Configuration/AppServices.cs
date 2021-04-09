@@ -11,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using post.BusinessManager;
+using post.Service;
 using System.IO;
 
 namespace Blog.Configuration
@@ -31,14 +33,14 @@ namespace Blog.Configuration
 
         public static void AddCustomServices(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<IBlogBusinessManager, BlogBusinessManager>();
-            serviceCollection.AddScoped<IBlogService, BlogService>();
+            serviceCollection.AddScoped<IPostBusinessManager, PostBusinessManager>();
+            serviceCollection.AddScoped<IPostService, PostService>();
             serviceCollection.AddScoped<IAdminBusinessManager, AdminBusinessManager>();
         }
 
         public static void AddCustomAuthorization(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IAuthorizationHandler, BlogAuthorizationHandler>();
+            serviceCollection.AddTransient<IAuthorizationHandler, PostAuthorizationHandler>();
         }
     }
 }

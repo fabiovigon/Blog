@@ -8,6 +8,6 @@ namespace Blog.Models.AdminViewModels
 {
     public class IndexViewModel
     {
-        public IEnumerable<Blogger> Blogs { get; set; }
+        public IEnumerable<Post> Posts { get; set; }
     }
 }

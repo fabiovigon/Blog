@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SuN6PymqqvCS+QiSSrGpTRn1vaw+TrnZ5yf9KG5bZUiCFfM31Op8rxowiOCwaFH9qBUu64/BcfgE+AVrUquSIA==",
+  "dgSpecHash": "dtV4HqMTUJN7xBKadx6edTsn54fSQyQMSo6o9JdpCXPHPjMtRHVKVgtW7rd3H6hBOD7iTNAbfnDDxVpYCGqePw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fabio\\source\\repos\\Blog\\Blog\\Blog.csproj",
   "expectedPackageFiles": [
@@ -69,6 +69,8 @@
     "C:\\Users\\Fabio\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\Fabio\\.nuget\\packages\\pagedlist.core\\1.17.4\\pagedlist.core.1.17.4.nupkg.sha512",
+    "C:\\Users\\Fabio\\.nuget\\packages\\pagedlist.core.mvc\\3.0.0\\pagedlist.core.mvc.3.0.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

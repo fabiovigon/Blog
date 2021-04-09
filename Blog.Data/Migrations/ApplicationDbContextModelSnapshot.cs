@@ -90,17 +90,14 @@ namespace Blog.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("Blog.Data.Models.Blogger", b =>
+            modelBuilder.Entity("Blog.Data.Models.Comment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Approved")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ApproverId")
+                    b.Property<string>("AuthorId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Content")
@@ -109,25 +106,21 @@ namespace Blog.Data.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("CreatorId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int?>("ParentId")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("Published")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedOn")
-                        .HasColumnType("datetime2");
+                    b.Property<int?>("PostId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApproverId");
+                    b.HasIndex("AuthorId");
 
-                    b.HasIndex("CreatorId");
+                    b.HasIndex("ParentId");
 
-                    b.ToTable("Blogs");
+                    b.HasIndex("PostId");
+
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("Blog.Data.Models.Post", b =>
@@ -143,10 +136,8 @@ namespace Blog.Data.Migrations
                     b.Property<string>("ApproverId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("BloggerId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Content")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedOn")
@@ -159,13 +150,15 @@ namespace Blog.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ApproverId");
-
-                    b.HasIndex("BloggerId");
 
                     b.HasIndex("CreatorId");
 
@@ -307,15 +300,19 @@ namespace Blog.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Blog.Data.Models.Blogger", b =>
+            modelBuilder.Entity("Blog.Data.Models.Comment", b =>
                 {
-                    b.HasOne("Blog.Data.Models.ApplicationUser", "Approver")
+                    b.HasOne("Blog.Data.Models.ApplicationUser", "Author")
                         .WithMany()
-                        .HasForeignKey("ApproverId");
+                        .HasForeignKey("AuthorId");
 
-                    b.HasOne("Blog.Data.Models.ApplicationUser", "Creator")
+                    b.HasOne("Blog.Data.Models.Comment", "Parent")
                         .WithMany()
-                        .HasForeignKey("CreatorId");
+                        .HasForeignKey("ParentId");
+
+                    b.HasOne("Blog.Data.Models.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostId");
                 });
 
             modelBuilder.Entity("Blog.Data.Models.Post", b =>
@@ -323,10 +320,6 @@ namespace Blog.Data.Migrations
                     b.HasOne("Blog.Data.Models.ApplicationUser", "Approver")
                         .WithMany()
                         .HasForeignKey("ApproverId");
-
-                    b.HasOne("Blog.Data.Models.Blogger", null)
-                        .WithMany("Posts")
-                        .HasForeignKey("BloggerId");
 
                     b.HasOne("Blog.Data.Models.ApplicationUser", "Creator")
                         .WithMany()
