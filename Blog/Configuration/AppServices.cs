@@ -36,6 +36,7 @@ namespace Blog.Configuration
             serviceCollection.AddScoped<IPostBusinessManager, PostBusinessManager>();
             serviceCollection.AddScoped<IPostService, PostService>();
             serviceCollection.AddScoped<IUserService, UserService>();
+            serviceCollection.AddScoped<IHomeBusinessManager, HomeBusinessManager>();
             serviceCollection.AddScoped<IAdminBusinessManager, AdminBusinessManager>();
         }
 

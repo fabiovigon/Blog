@@ -41,6 +41,7 @@ namespace Blog.BusinessManager
             var applicationUser = await _userManager.GetUserAsync(claimsPrincipal);
             return new AboutViewModel
             {
+                ApplicationUser = applicationUser,
                 SubHeader = applicationUser.SubHeader,
                 Content = applicationUser.AboutContent
             };
@@ -50,7 +51,7 @@ namespace Blog.BusinessManager
         {
             var applicationUser = await _userManager.GetUserAsync(claimsPrincipal);
             applicationUser.SubHeader = aboutViewModel.SubHeader;
-            applicationUser.SubHeader = aboutViewModel.Content;
+            applicationUser.AboutContent = aboutViewModel.Content;
 
             if (aboutViewModel.HeaderImage != null)
             {
