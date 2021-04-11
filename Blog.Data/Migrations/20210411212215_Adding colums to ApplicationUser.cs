@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Blog.Data.Migrations
 {
-    public partial class Initialize : Migration
+    public partial class AddingcolumstoApplicationUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -41,7 +41,9 @@ namespace Blog.Data.Migrations
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true)
+                    LastName = table.Column<string>(nullable: true),
+                    SubHeader = table.Column<string>(nullable: true),
+                    AboutContent = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

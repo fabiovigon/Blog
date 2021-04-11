@@ -10,5 +10,7 @@ namespace Blog.BusinessManager.interfaces
     public interface IAdminBusinessManager
     {
         Task<IndexViewModel> GetAdminDashBoard(ClaimsPrincipal claimsPrincipal);
+        Task<AboutViewModel> GetAboutViewModel(ClaimsPrincipal claimsPrincipal);
+        Task UpdateAbout(AboutViewModel aboutViewModel, ClaimsPrincipal claimsPrincipal);
     }
 }
