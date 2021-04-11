@@ -8,7 +8,7 @@ namespace Blog.Data.Models
     public class ApplicationUser : IdentityUser
     {
         [PersonalData]
-        public string FisrtName { get; set; }
+        public string FirstName { get; set; }
         [PersonalData]
         public string LastName { get; set; }
     }

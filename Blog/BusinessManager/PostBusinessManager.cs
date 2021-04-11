@@ -37,7 +37,7 @@ namespace post.BusinessManager
 
         public IndexViewModel GetIndexViewModel(string searchString, int? page)
         {
-            int pageSize = 2;
+            int pageSize = 20;
             int pageNumber = page ?? 1;
             var posts = _postService.GetPosts(searchString ?? string.Empty)
                  .Where(post => post.Published);
@@ -49,6 +49,31 @@ namespace post.BusinessManager
                 PageNumber = pageNumber
             };
         }
+
+        public async Task<ActionResult<PostViewModel>> GetPostViewModel(int? id, ClaimsPrincipal claimsPrincipal)
+        {
+            if (id is null)
+                return new BadRequestResult();
+
+            var postId = id.Value;
+
+            var post = _postService.GetPost(postId);
+
+            if (post is null)
+                return new NotFoundResult();
+
+            if (!post.Published)
+            {
+                var authorizationResult = await _authorizationService.AuthorizeAsync(claimsPrincipal, post, Operations.Read);
+
+                if (!authorizationResult.Succeeded) return DetermineActionResult(claimsPrincipal);
+            }
+            return new PostViewModel
+            {
+                Post = post
+            };
+        }
+
 
         public async Task<Post> CreatePost(CreateViewModel createpostViewModel, ClaimsPrincipal claimsPrincipal)
         {

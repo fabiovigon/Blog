@@ -18,7 +18,13 @@ namespace post.Service
        
         public Post GetPost(int postId)
         {
-            return _applicationDbContext.Posts.FirstOrDefault(post => post.Id == postId);
+            return _applicationDbContext.Posts
+                .Include(post => post.Creator)
+                .Include(post => post.Comments)
+                    .ThenInclude(comment => comment.Author)
+                .Include(post => post.Comments)
+                    .ThenInclude(comment => comment.Comments)
+                .FirstOrDefault(post => post.Id == postId);
         }
 
         public IEnumerable<Post> GetPosts(string searchString)

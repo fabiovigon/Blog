@@ -451,3 +451,4 @@ C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.csproj.CopyCo
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.dll
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.pdb
 C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Blog.genruntimeconfig.cache
+C:\Users\Fabio\source\repos\Blog\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Post\_ReadLayout.cshtml.g.cs

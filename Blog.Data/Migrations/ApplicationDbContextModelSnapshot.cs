@@ -38,7 +38,7 @@ namespace Blog.Data.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("FisrtName")
+                    b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
@@ -307,7 +307,7 @@ namespace Blog.Data.Migrations
                         .HasForeignKey("AuthorId");
 
                     b.HasOne("Blog.Data.Models.Comment", "Parent")
-                        .WithMany()
+                        .WithMany("Comments")
                         .HasForeignKey("ParentId");
 
                     b.HasOne("Blog.Data.Models.Post", "Post")
