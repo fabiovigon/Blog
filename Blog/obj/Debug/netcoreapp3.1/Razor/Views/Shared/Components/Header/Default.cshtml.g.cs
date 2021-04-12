@@ -27,7 +27,7 @@ using Blog.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"02a6b8f0f404456be026c6ce09b034c077ed044e", @"/Views/Shared/Components/Header/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"38f3287994c7f91728dcdd113fd25201bcd3f486", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"611b0279bc10d69b09c5923306af98d2524604b6", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Header_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

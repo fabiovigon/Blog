@@ -4,16 +4,15 @@ using Blog.BusinessManager.interfaces;
 using Blog.Data;
 using Blog.Data.Models;
 using Blog.Service;
-using Blog.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
-using post.BusinessManager;
-using post.Service;
 using System.IO;
+using Blog.Service.Interfaces;
+using post.Service;
+using post.BusinessManager;
 
 namespace Blog.Configuration
 {

@@ -34,7 +34,7 @@ using PagedList.Core.Mvc;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6185663b4265d00da43ae474753b4d7ac791bb2", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"38f3287994c7f91728dcdd113fd25201bcd3f486", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"611b0279bc10d69b09c5923306af98d2524604b6", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Blog.Models.HomeViewModels.IndexViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "text", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -71,14 +71,15 @@ using PagedList.Core.Mvc;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+        private global::Blog.TagHelpers.HidePagerHelper __Blog_TagHelpers_HidePagerHelper;
         private global::PagedList.Core.Mvc.PagerTagHelper __PagedList_Core_Mvc_PagerTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\n<div class=\"container\">\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6185663b4265d00da43ae474753b4d7ac791bb26932", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6185663b4265d00da43ae474753b4d7ac791bb27024", async() => {
                 WriteLiteral("\n        <div class=\"input-group mb-3\">\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d6185663b4265d00da43ae474753b4d7ac791bb27242", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d6185663b4265d00da43ae474753b4d7ac791bb27334", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -131,7 +132,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"col-lg-4 col-md-3 mb-4\">\n    <div class=\"card border-0 shadow\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d6185663b4265d00da43ae474753b4d7ac791bb211121", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d6185663b4265d00da43ae474753b4d7ac791bb211213", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -156,7 +157,7 @@ AddHtmlAttributeValue("", 786, post.Id, 786, 8, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n        <div class=\"card-body\">\n            <div class=\"row text-center\" style=\"margin: 0px auto 10px 0px;\">\n                <h5 class=\"card-title text-center w-100\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6185663b4265d00da43ae474753b4d7ac791bb212923", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6185663b4265d00da43ae474753b4d7ac791bb213015", async() => {
 #nullable restore
 #line 21 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
                                                                                                                         Write(post.Title);
@@ -202,23 +203,15 @@ AddHtmlAttributeValue("", 786, post.Id, 786, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("    </div>\n    <div");
-            BeginWriteAttribute("list", " list=\"", 1161, "\"", 1180, 1);
-#nullable restore
-#line 27 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
-WriteAttributeValue("", 1168, Model.Posts, 1168, 12, false);
-
-#line default
-#line hidden
-#nullable disable
-            EndWriteAttribute();
-            WriteLiteral(" count=\"20\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("pager", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d6185663b4265d00da43ae474753b4d7ac791bb216195", async() => {
-            }
-            );
-            __PagedList_Core_Mvc_PagerTagHelper = CreateTagHelper<global::PagedList.Core.Mvc.PagerTagHelper>();
-            __tagHelperExecutionContext.Add(__PagedList_Core_Mvc_PagerTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_8);
+            WriteLiteral("    </div>\n    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6185663b4265d00da43ae474753b4d7ac791bb215914", async() => {
+                WriteLiteral("\n        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("pager", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d6185663b4265d00da43ae474753b4d7ac791bb216178", async() => {
+                }
+                );
+                __PagedList_Core_Mvc_PagerTagHelper = CreateTagHelper<global::PagedList.Core.Mvc.PagerTagHelper>();
+                __tagHelperExecutionContext.Add(__PagedList_Core_Mvc_PagerTagHelper);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_8);
 #nullable restore
 #line 28 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
 __PagedList_Core_Mvc_PagerTagHelper.List = Model.Posts;
@@ -226,7 +219,7 @@ __PagedList_Core_Mvc_PagerTagHelper.List = Model.Posts;
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext.AddTagHelperAttribute("list", __PagedList_Core_Mvc_PagerTagHelper.List, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                __tagHelperExecutionContext.AddTagHelperAttribute("list", __PagedList_Core_Mvc_PagerTagHelper.List, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
 #nullable restore
 #line 28 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
 __PagedList_Core_Mvc_PagerTagHelper.Options = PagedListRenderOptions.Bootstrap4PageNumbersPlusPrevAndNext;
@@ -234,16 +227,16 @@ __PagedList_Core_Mvc_PagerTagHelper.Options = PagedListRenderOptions.Bootstrap4P
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext.AddTagHelperAttribute("options", __PagedList_Core_Mvc_PagerTagHelper.Options, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-            __PagedList_Core_Mvc_PagerTagHelper.AspAction = (string)__tagHelperAttribute_4.Value;
-            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
-            __PagedList_Core_Mvc_PagerTagHelper.AspController = (string)__tagHelperAttribute_3.Value;
-            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
-            if (__PagedList_Core_Mvc_PagerTagHelper.RouteValues == null)
-            {
-                throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-query", "PagedList.Core.Mvc.PagerTagHelper", "RouteValues"));
-            }
-            BeginWriteTagHelperAttribute();
+                __tagHelperExecutionContext.AddTagHelperAttribute("options", __PagedList_Core_Mvc_PagerTagHelper.Options, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                __PagedList_Core_Mvc_PagerTagHelper.AspAction = (string)__tagHelperAttribute_4.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+                __PagedList_Core_Mvc_PagerTagHelper.AspController = (string)__tagHelperAttribute_3.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
+                if (__PagedList_Core_Mvc_PagerTagHelper.RouteValues == null)
+                {
+                    throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-query", "PagedList.Core.Mvc.PagerTagHelper", "RouteValues"));
+                }
+                BeginWriteTagHelperAttribute();
 #nullable restore
 #line 28 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
                                                                                                                                                                                 WriteLiteral(Model.SearchString);
@@ -251,9 +244,37 @@ __PagedList_Core_Mvc_PagerTagHelper.Options = PagedListRenderOptions.Bootstrap4P
 #line default
 #line hidden
 #nullable disable
-            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
-            __PagedList_Core_Mvc_PagerTagHelper.RouteValues["query"] = __tagHelperStringValueBuffer;
-            __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-query", __PagedList_Core_Mvc_PagerTagHelper.RouteValues["query"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+                __PagedList_Core_Mvc_PagerTagHelper.RouteValues["query"] = __tagHelperStringValueBuffer;
+                __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-query", __PagedList_Core_Mvc_PagerTagHelper.RouteValues["query"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral("\n    ");
+            }
+            );
+            __Blog_TagHelpers_HidePagerHelper = CreateTagHelper<global::Blog.TagHelpers.HidePagerHelper>();
+            __tagHelperExecutionContext.Add(__Blog_TagHelpers_HidePagerHelper);
+#nullable restore
+#line 27 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
+__Blog_TagHelpers_HidePagerHelper.List = Model.Posts;
+
+#line default
+#line hidden
+#nullable disable
+            __tagHelperExecutionContext.AddTagHelperAttribute("list", __Blog_TagHelpers_HidePagerHelper.List, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+#nullable restore
+#line 27 "C:\Users\Fabio\source\repos\Blog\Blog\Views\Home\Index.cshtml"
+__Blog_TagHelpers_HidePagerHelper.Count = 20;
+
+#line default
+#line hidden
+#nullable disable
+            __tagHelperExecutionContext.AddTagHelperAttribute("count", __Blog_TagHelpers_HidePagerHelper.Count, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -261,7 +282,7 @@ __PagedList_Core_Mvc_PagerTagHelper.Options = PagedListRenderOptions.Bootstrap4P
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\n    </div>\n</div>");
+            WriteLiteral("\n</div>");
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

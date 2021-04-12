@@ -24,7 +24,17 @@ namespace post.Service
                     .ThenInclude(comment => comment.Author)
                 .Include(post => post.Comments)
                     .ThenInclude(comment => comment.Comments)
+                        .ThenInclude(reply => reply.Parent)
                 .FirstOrDefault(post => post.Id == postId);
+        }
+
+        public Comment GetComment(int commentId)
+        {
+            return _applicationDbContext.Comments
+                .Include(comment => comment.Author)
+                .Include(comment => comment.Post)
+                .Include(comment => comment.Parent)
+                .FirstOrDefault(comment => comment.Id == commentId);
         }
 
         public IEnumerable<Post> GetPosts(string searchString)
@@ -51,6 +61,14 @@ namespace post.Service
             await _applicationDbContext.SaveChangesAsync();
             return post;
         }
+
+        public async Task<Comment> Add(Comment comment)
+        {
+            _applicationDbContext.Add(comment);
+            await _applicationDbContext.SaveChangesAsync();
+            return comment;
+        }
+
 
         public async Task<Post> Update(Post post)
         {

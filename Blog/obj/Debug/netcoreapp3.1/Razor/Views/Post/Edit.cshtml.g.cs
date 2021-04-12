@@ -27,7 +27,7 @@ using Blog.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6f86d6009f70f61fb759ebcfa4f40846661d3b9", @"/Views/Post/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"38f3287994c7f91728dcdd113fd25201bcd3f486", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"611b0279bc10d69b09c5923306af98d2524604b6", @"/Views/_ViewImports.cshtml")]
     public class Views_Post_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Blog.Models.PostViewModels.EditViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("custom-file-input"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

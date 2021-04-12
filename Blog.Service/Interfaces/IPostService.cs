@@ -11,5 +11,7 @@ namespace Blog.Service.Interfaces
         Task<Post> Update(Post post);
         IEnumerable<Post> GetPosts(ApplicationUser applicationUser);
         IEnumerable<Post> GetPosts(string searchString);
+        Comment GetComment(int commentId);
+        Task<Comment> Add(Comment comment);
     }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -34,16 +35,14 @@
                         <h1>@ViewData["HeaderTitle"]</h1>
                         @if (ViewData["SubHeader"] is null)
                         {
-                            <span class="meta">
-                                Posted by
-                                <a asp-controller="Home" asp-action="Author" asp-route-authorId="@ViewData["AuthorId"]">@ViewData["AuthorName"]</a>
-                                on @ViewData["PostDate"]
-                            </span>
-                        }
+            <span class="meta">
+                Posted by
+                <a asp-controller="Home" asp-action="Author" asp-route-authorId="@ViewData["AuthorId"]">@ViewData["AuthorName"]</a>
+                on @ViewData["PostDate"]
+            </span> }
                         else
                         {
-                            <span class="subheading">@ViewData["SubHeader"]</span>
-                        }
+            <span class="subheading">@ViewData["SubHeader"]</span>}
                     </div>
                 </div>
             </div>
@@ -59,6 +58,6 @@
     <script src="~/vendor/jquery/jquery.min.js"></script>
     <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/clean-blog.min.js"></script>
-
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
