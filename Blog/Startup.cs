@@ -1,9 +1,11 @@
 using Blog.Configuration;
+using Blog.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Pomelo.EntityFrameworkCore.MySql;
 namespace Blog
 {
     public class Startup
@@ -17,6 +19,7 @@ namespace Blog
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultServices(Configuration);
             services.AddCustomServices();
             services.AddCustomAuthorization();

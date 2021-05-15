@@ -1,0 +1,15 @@
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\Blog.Service.deps.json
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\Blog.Service.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\ref\Blog.Service.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\Blog.Service.pdb
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\Blog.Data.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\bin\Debug\net5.0\Blog.Data.pdb
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.csprojAssemblyReference.cache
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.AssemblyInfoInputs.cache
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.AssemblyInfo.cs
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.csproj.CopyComplete
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\ref\Blog.Service.dll
+C:\Users\Fabio\source\repos\Blog\Blog.Service\obj\Debug\net5.0\Blog.Service.pdb

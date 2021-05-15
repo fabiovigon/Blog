@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-Blog-D2CFC11B-EA83-4D88-A6D0-5C50D0BCA5BD</UserSecretsId>
   </PropertyGroup>
 
@@ -17,6 +17,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="PagedList.Core.Mvc" Version="3.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
